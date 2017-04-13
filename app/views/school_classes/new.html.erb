@@ -1,0 +1,17 @@
+<h1>New School Class Form</h1>
+
+This is the new school_class Form page.
+<br><br>
+
+<%= form_for(@school_class) do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+  <br><br>
+  <%= f.label :room_number %>
+  <%= f.text_field :room_number %>
+  <br><br>
+  <%= f.submit %>
+<% end %>
+
+<br><br>
+  <%= params.inspect %>

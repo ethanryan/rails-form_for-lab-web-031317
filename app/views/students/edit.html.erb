@@ -1,0 +1,17 @@
+<h1>Edit Student Form</h1>
+
+This is the edit Student Form page.
+<br><br>
+
+<%= form_for(@student) do |f| %>
+  <%= f.label :first_name %>
+  <%= f.text_field :first_name %>
+  <br><br>
+  <%= f.label :last_name %>
+  <%= f.text_field :last_name %>
+  <br><br>
+  <%= f.submit %>
+<% end %>
+
+<br><br>
+  <%= params.inspect %>
